@@ -1,3 +1,3 @@
 module.exports = {
-  basePath: '/go-cheat-sheets',
+  basePath: process.env.NODE_ENV === 'production' ? '/go-cheat-sheets' : null,
 }
