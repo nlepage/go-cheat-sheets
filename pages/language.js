@@ -22,19 +22,51 @@ export default function Language() {
           <img src="z-gopher-g.png" className={styles.titleGopher} />
         </header>
         <main className={styles.main}>
-          <section className={styles.section}>
-            <h2>Variables</h2>
-            <p>Some text blahblah...<br /> Some other text...</p>
-            {go`
-              package main
+          <div className={styles.column}>
+            <section className={styles.section}>
+              <h2>Packages</h2>
+              TODO
+            </section>
 
-              import "fmt"
+            <section className={styles.section}>
+              <h2>Imports</h2>
+              {go`
+                package main
 
-              func main() {
-                  fmt.Println("Hello variables!")
-              }
-            `}
-          </section>
+                import (
+                    "fmt" // Import package fmt
+                    "math/rand" // Import package rand
+                )
+
+                func main() {
+                    fmt.Println(rand.Int())
+                }
+              `}
+            </section>
+
+            <section className={styles.section}>
+              <h2><code>main</code> package</h2>
+              <p>Go programs start by running the <code>main()</code> function of package <code>main</code>:</p>
+              {go`
+                package main
+
+                import "fmt"
+
+                func main() {
+                    fmt.Println("Hello 🐶!")
+                    // Prints "Hello 🐶!" on stdout
+                }
+              `}
+            </section>
+          </div>
+
+          <div className={styles.column}>
+            col2
+          </div>
+
+          <div className={styles.column}>
+            col3
+          </div>
         </main>
       </Page>
 

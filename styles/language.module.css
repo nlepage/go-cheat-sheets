@@ -22,28 +22,30 @@
 .main {
   column-gap: 8pt;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   height: calc(100% - 64pt)
 }
 
+.column {
+  flex: 1;
+}
+
 .section {
+  font-size: 9pt;
   margin-top: 8pt;
   page-break-inside: avoid;
 }
 
 .section > h2 {
-  font-size: 16pt;
+  font-size: 14pt;
   margin: 0;
 }
 
 .section > p {
-  font-size: 10pt;
   margin: 4pt 0 0;
 }
 
 .section > pre {
   border: solid 1px lightgray;
-  font-size: 9pt;
   margin: 4pt 0 0;
 }
