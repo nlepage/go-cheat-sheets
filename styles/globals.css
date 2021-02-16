@@ -21,7 +21,7 @@ a {
     box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 50%);
     height: 21cm;
     margin: 0 auto 1.5cm;
-    padding: 1cm;
+    padding: .5cm 1cm;
     width: 29.7cm;
   }
 
@@ -32,12 +32,17 @@ a {
 
 @media print {
   .page {
+    height: 20cm;
     page-break-after: always;
     page-break-inside: avoid;
   }
 
   @page {
-    margin: 1cm;
+    margin: .5cm 1cm;
     size: A4 landscape;
   }
+}
+
+:root {
+  --border-color: black;
 }

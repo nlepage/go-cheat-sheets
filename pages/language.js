@@ -15,33 +15,105 @@ export default function Language() {
       </Head>
 
       <Page>
-        <main className={styles.main}>
+        <header className={styles.header}>
           <h1 className={styles.title}>
-            Go language cheat sheet!
+            Go language cheat sheet
           </h1>
-          <p>
-            Test
-          </p>
+          <img src="z-gopher-g.png" className={styles.titleGopher} />
+        </header>
+        <main className={styles.main}>
           {go`
             package main
 
             import "fmt"
 
             func main() {
-                fmt.Println("Hello world!")
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
+            }
+          `}
+          {go`
+            package main
+
+            import "fmt"
+
+            func main() {
+                fmt.Println("Hello variables!")
             }
           `}
         </main>
       </Page>
 
       <Page>
-        <main className={styles.main}>
+        <header className={styles.header}>
           <h1 className={styles.title}>
-            Go language cheat sheet!
+            Go language cheat sheet
           </h1>
-          <p>
-            Test
-          </p>
+          <img src="z-gopher.png" className={styles.titleGopher} />
+        </header>
+        <main className={styles.main}>
           {go`
             package main
 
