@@ -26,3 +26,24 @@
   flex-wrap: wrap;
   height: calc(100% - 64pt)
 }
+
+.section {
+  margin-top: 8pt;
+  page-break-inside: avoid;
+}
+
+.section > h2 {
+  font-size: 16pt;
+  margin: 0;
+}
+
+.section > p {
+  font-size: 10pt;
+  margin: 4pt 0 0;
+}
+
+.section > pre {
+  border: solid 1px lightgray;
+  font-size: 9pt;
+  margin: 4pt 0 0;
+}

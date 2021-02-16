@@ -22,87 +22,19 @@ export default function Language() {
           <img src="z-gopher-g.png" className={styles.titleGopher} />
         </header>
         <main className={styles.main}>
-          {go`
-            package main
+          <section className={styles.section}>
+            <h2>Variables</h2>
+            <p>Some text blahblah...<br /> Some other text...</p>
+            {go`
+              package main
 
-            import "fmt"
+              import "fmt"
 
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
-          {go`
-            package main
-
-            import "fmt"
-
-            func main() {
-                fmt.Println("Hello variables!")
-            }
-          `}
+              func main() {
+                  fmt.Println("Hello variables!")
+              }
+            `}
+          </section>
         </main>
       </Page>
 
