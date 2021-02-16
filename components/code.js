@@ -24,6 +24,8 @@ function Code({ language, children }) {
 
 export function useCode() {
   useEffect(() => {
-    hljs.highlightAll()
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block)
+    })
   }, [])
 }
